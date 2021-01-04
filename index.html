@@ -113,6 +113,85 @@
                 </label>
             </li>
         </fieldset>
+
+        <!-- Order details -->
+        <fieldset id="order-details">
+            <legend>Order Details</legend>
+
+            <!-- Order table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th id="production-code" scope="col">Production Code</th>
+                        <th id="description" scope="col">Description</th>
+                        <th id="quantity" scope="col">Qty</th>
+                        <th id="price" scope="col">Price</th>
+                        <th id="total" scope="col">Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td headers="production-code">
+                            COMP001
+                            <input type="hidden" name="product-code" value="COMP001">
+                        </td>
+                        <td headers="description">
+                            The Ultimate Smartphone
+                        </td>
+                        <td headers="quantity">
+                            <input type="number" name="quantity" data-price="399.99" value="0" min="0" max="99"
+                                maxlength="2">
+                        </td>
+                        <td headers="price">$399.99</td>
+                        <td headers="total">
+                            <output name="item-output" class="item-total">$0.00</output>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td headers="production-code">
+                            comp002
+                            <input type="hidden" name="product-code" value="comp002">
+
+                        </td>
+                        <td headers="description">
+                            the ultimate tablet
+                        </td>
+                        <td headers="quantity"><input type="number" name="quantity" data-price="499.99" value="0"
+                                min="0" max="99" maxlength="2">
+                        </td>
+                        <td headers="price">$499.99</td>
+                        <td headers="total"><output name="item-output" class="item-total">$0.00</output></td>
+                    </tr>
+                    <tr>
+                        <td headers="production-code">
+                            comp003
+                            <input type="hidden" name="product-code" value="comp003">
+
+                        </td>
+                        <td headers="description">
+                            the ultimate Netbook
+                        </td>
+                        <td headers="quantity"><input type="number" name="quantity" data-price="299.99" value="0"
+                                min="0" max="99" maxlength="2">
+                        </td>
+                        <td headers="price">$299.99</td>
+                        <td headers="total">
+                            <output name="item-output" class="item-total">$0.00</output>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th id="all-total" colspan="4" scope="row">Order Total</th>
+                        <td headers="all-total total">
+                            <output name="order-total" id="order-total">$0.00</output>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
         <div id="buttons">
             <button type="submit" value="submit-order" id="btn__sabmit-order">
                 Submit Order
