@@ -192,6 +192,42 @@
                 </tfoot>
             </table>
         </fieldset>
+
+        <!-- Payment Details -->
+        <fieldset id="payment-detail">
+            <legend>Payment Details</legend>
+            <ul>
+                <li>
+                    <label class="required">
+                        <div>Name on Card</div>
+                        <input type="text" name="name-on-card" placeholder="Name On Card" maxlength="30"
+                            autocapitalize="word" required>
+                    </label>
+                </li>
+                <li>
+                    <label class="required">
+                        <div>Credit Card No.</div>
+                        <input type="text" name="credit-card-no" placeholder="Credit Card No." maxlength="16"
+                            pattern="[0-9]{13, 16}" title="13-16 digits, no space">
+                    </label>
+                </li>
+                <li>
+                    <label class="required">
+                        <div>Expiration Date</div>
+                        <input type="month" name="expiration-date" value="2021-06" maxlength="7" placeholder="YYYY-MM"
+                            required>
+                    </label>
+                </li>
+                <li>
+                    <label class="required">
+                        <div>CVV2 No.</div>
+                        <input type="text" name="card-ccv2" pattern="[0-9]{3}" title="Exactely 3 digits"
+                            maxlength="3">
+                        <span>(Three digit code at back of card)</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
         <div id="buttons">
             <button type="submit" value="submit-order" id="btn__sabmit-order">
                 Submit Order
