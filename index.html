@@ -10,7 +10,7 @@
 <body>
     <form name="order-form" id="order-form" mothod="POST" action="/submit">
         <h1>Order Form</h1>
-        
+
         <!-- Contact Details -->
         <fieldset id="contact-details">
             <legend>Contact Details</legend>
@@ -95,6 +95,23 @@
                     </label>
                 </li>
             </ul>
+        </fieldset>
+
+        <!-- Login Details -->
+        <fieldset id="login-details">
+            <legend>Login Details</legend>
+            <li>
+                <label class="required">
+                    <div>Password</div>
+                    <input type="password" name="password" id="password" required>
+                </label>
+            </li>
+            <li>
+                <label class="required">
+                    <div>Confirm Password</div>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                </label>
+            </li>
         </fieldset>
         <div id="buttons">
             <button type="submit" value="submit-order" id="btn__sabmit-order">
