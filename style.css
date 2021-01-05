@@ -1,3 +1,8 @@
+:root {
+  --base-color: #09647901;
+  --complement-orange: #C45C00;
+}
+
 * {
   margin: 0;
   padding: 0;
