@@ -100,6 +100,16 @@ tfoot {
   padding-right: 5px;
 }
 
+#quantity, 
+td[headers="quantity"] input {
+  max-width: 60px;
+  min-width: 30px;
+}
+td[headers="quantity"] input{
+  display: block;
+  margin: auto auto;
+}
+
 /* Payment Details */
 
 #payment-details .input-prefix-suffix input {
