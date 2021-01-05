@@ -16,9 +16,10 @@ body {
   font-size: 100%;
   width: 100%;
   padding: 10% 25%;
-  background: #076585;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -35,12 +36,8 @@ form ul {
   grid-template-columns: 1fr 1fr;
 }
 
-form h1 {
-  text-align: center;
-}
 
 fieldset {
-  margin: 1em 1em 1em 1em;
   border: none;
 }
 
@@ -82,11 +79,11 @@ form #contact-details #form__li-3 {
 
 #order-details thead,
 tfoot {
-  background-color: var(--analogous-green);
+  background-color: #4DD8FF;
 }
 
 #order-details table tbody tr {
-  background-color: var(--analogous-blue-green);
+  background-color: #00A0CC;
 }
 
 #order-details table td {
@@ -107,4 +104,32 @@ tfoot {
 
 #payment-details .input-prefix-suffix input {
   width: 35% !important;
+}
+
+/* Buttons */
+
+#buttons {
+  position: relative;
+  width: 100%;
+  padding-top: .4em;
+  margin-top: .8em;
+  border-top: 2px solid black;
+  height: 30px;
+}
+
+#buttons button {
+  background-color: #4DD8FF;
+  padding: .5em;
+  border: 1px solid #4DD8FF;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px  #006480;
+}
+#btn__submit-order {
+  position: absolute;
+  right: 0;
+}
+
+#btn__save-order {
+  position: absolute;
+  right: 100px;
 }
