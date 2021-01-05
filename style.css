@@ -1,5 +1,5 @@
 :root {
-  --base-color: #09647901;
+  --base-color: rgb(9, 101, 121);
   --complement-orange: rgb(196, 92, 0);
   --complement-brown: #783c08;
   --analogous-green: #038555;
@@ -16,11 +16,10 @@ body {
   font-size: 100%;
   width: 100%;
   padding: 10% 25%;
-  background: rgb(3, 2, 17);
-  background: linear-gradient(90deg, var(--analogous-green) 0%, rgba(9, 100, 121, 1) 34%, rgba(9, 100, 121, 1) 75%, rgba(1, 20, 14, 1) 100%);
-  background: -o-linear-gradient(90deg, var(--analogous-green) 0%, rgba(9, 100, 121, 1) 34%, rgba(9, 100, 121, 1) 75%, var(--analogous-green) 100%);
-  background: -moz-linear-gradient(90deg, var(--analogous-green) 0%, rgba(9, 100, 121, 1) 34%, rgba(9, 100, 121, 1) 75%, var(--analogous-green) 100%);
-  background: -webkit-linear-gradient(90deg, var(--analogous-green) 0%, rgba(9, 100, 121, 1) 34%, rgba(9, 100, 121, 1) 75%, var(--analogous-green) 100%);
+  background: #076585;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 form {
@@ -56,6 +55,7 @@ legend {
 input,
 select {
   width: 100%;
+  background-color: rgb(232, 240, 254);
 }
 
 
@@ -70,8 +70,8 @@ form #contact-details #form__li-3 {
   grid-column: 1/2;
 }
 
-#twitter__username-prefix {
-  display: flex;
+.input-prefix-suffix {
+  display: flex !important;
 }
 
 /* Order Details */
@@ -101,4 +101,10 @@ tfoot {
 #order-details td[headers="total"] {
   text-align: right;
   padding-right: 5px;
+}
+
+/* Payment Details */
+
+#payment-details .input-prefix-suffix input {
+  width: 35% !important;
 }

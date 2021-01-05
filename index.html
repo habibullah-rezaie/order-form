@@ -91,7 +91,7 @@
                 <li id="form__li-7">
                     <label>
                         <div>Twitter</div>
-                        <div id="twitter__username-prefix"><span class="twitter_prefix">@</span>
+                        <div class="input-prefix-suffix"><span class="twitter_prefix">@</span>
                             <input type="text" name="twitter" id="twitter">
                         </div>
                     </label>
@@ -199,7 +199,7 @@
         </fieldset>
 
         <!-- Payment Details -->
-        <fieldset id="payment-detail">
+        <fieldset id="payment-details">
             <legend>Payment Details</legend>
             <ul>
                 <li>
@@ -226,8 +226,12 @@
                 <li>
                     <label class="required">
                         <div>CVV2 No.</div>
-                        <input type="text" name="card-ccv2" pattern="[0-9]{3}" title="Exactely 3 digits" maxlength="3">
-                        <span>(Three digit code at back of card)</span>
+
+                        <div class="input-prefix-suffix">
+                            <input type="text" name="card-ccv2" pattern="[0-9]{3}" title="Exactely 3 digits"
+                                maxlength="3">
+                            <span>(Three digit code at back of card)</span>
+                        </div>
                     </label>
                 </li>
             </ul>
