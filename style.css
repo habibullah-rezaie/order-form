@@ -16,7 +16,15 @@ body {
 }
 
 form {
-  background-color: rgb(125, 177, 194);
+  background-color: rgb(125, 177, 194, .5);
   border-radius: 10px;
   padding: 1em;
+}
+
+form ul {
+  list-style: none;
+}
+
+form h1 {
+  text-align: center;
 }
